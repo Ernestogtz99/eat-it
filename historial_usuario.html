@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="historial_usuario.js"></script>
+</head>
+<body id="color3">
+	<div id="barra_izquierda">
+		<h1>Eating</h1>
+		<div id="tabs">
+			<h2 onclick="toInicio()">Inicio</h2>
+			<h2 style="background-color: #FDFBF9;">Historial</h2>
+			<h2>Perfil</h2>
+			<h2>Ajustes</h2>
+		</div>
+		<h3 onclick="cerrarSesion()">Cerrar Sesión</h3>
+	</div>
+	<div id="barra_derecha">
+		<h1>Tu pedido</h1>
+		<img src="basket.png">
+			<div id="pedidos">
+				<!-- '<div class="pedido">
+					<h1>'+platillos_pedido[i]+'</h1>
+					<h2>1</h2>
+					<h3>$'+precio_pedido[i]+'</h3>
+				</div>' -->
+				
+			</div>
+			<div id="total_pedido">
+				<hr>
+				<h1>Total</h1>
+				<h2 id="total"></h2>
+				<button style="background-color:#F87302 " onclick="cancelarPedido()">Cancelar</button>
+			</div>
+	</div>
+	<div id="space">
+		<h1 id="titulo_historial">Historial</h1>
+		<div id="historial_usuario">
+			<!-- '<div class="pedido_historial" style="background-color: #00AE43 ">
+				<h1>'+restaurante_activo+'</h1>
+				<h2>Realizado a las '+hora+'</h2>
+				<h3>'+fecha+'</h3>
+			</div>' -->
+		</div>
+		<div id="leyenda">
+			<h6>Preparando</h6>
+			<h6>Entregado</h6>
+			<h6>Cancelado</h6>
+			<div id="circulos">
+				<div style="background-color:#00AE43 "></div>
+				<div style="background-color:#FEB618 "></div>
+				<div style="background-color:#F87302 "></div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</body>
+</html>

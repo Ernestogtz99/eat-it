@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="iniciar_sesion.js"></script>
+</head>
+<body id="color2" onload="cargar_events()"> 
+	<h2 id="ingresa_como">Ingresa como:</h2>
+	<h1 id="iniciar_sesion_usuario" class="animated bounce">usuario</h1>
+	<h1 id="iniciar_sesion_restaurante" class="animated bounce" >restaurante</h1>
+	<img src="usuario.jpg" id="imagen_usuario">
+	<img src="restaurante2.jpg" id="imagen_restaurante">
+
+	<div id="formulario_iniciar_sesion_usuario" class="formulario">
+		<h4>Usuario</h4>
+		<input type="text" id="usuario">
+		<h4>Contraseña</h4>
+		<input type="password" id="contraseña">
+		<h6>¿Olvidaste tu contraseña?</h6>
+		<button onclick="ingresarUsuario()">Ingresar</button>
+	</div>
+	<div id="formulario_iniciar_sesion_restaurante" class="formulario">
+		<h4>Restaurante</h4>
+		<input type="text" id="restaurante">
+		<h4>Contraseña</h4>
+		<input type="password" id="contraseña_res">
+		<h6>¿Olvidaste tu contraseña?</h6>
+		<button onclick="ingresarRestaurante()">Ingresar</button>
+	</div>
+	
+</body>
+</html>

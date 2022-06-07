@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="inicio_usuario.js"></script>
+</head>
+<body id="color3">
+	<div id="barra_izquierda">
+		<h1>Eating</h1>
+		<div id="tabs">
+			<h2 style="background-color: #FDFBF9;">Inicio</h2>
+			<h2 onclick="toHistorial()">Historial</h2>
+			<h2>Perfil</h2>
+			<h2>Ajustes</h2>
+		</div>
+		<h3 onclick="cerrarSesion()">Cerrar Sesión</h3>
+	</div>
+	<div id="barra_derecha">
+		<h1>Tu pedido</h1>
+		<img src="basket.png">
+		<h2>:'(</h2>
+		<h3>Aún no haz agregado nada. ¡Hechale un vistazo al menú!</h3>
+	</div>
+
+	<div id="space">
+		<h5>Bienvenid@</h5>
+		<h6 id="nombre_usuario"></h6>
+		<input type="text" id="buscar" placeholder="Buscar">
+		<img src="lupa.png" id="lupa">
+		<div id="limon">
+			<h1 id="titulo_limon">Comida a <br>tu medida</h1>
+		</div>
+		<h4>Tus favoritos</h4>
+		<div id="favoritos">
+			<!-- <div class="restaurante">Burguer</div> -->
+			
+		</div>
+		<h4>Restaurantes cerca de ti</h4>
+		<div id="restaurantes">
+			<!-- <div class="restaurante">Burguer</div> -->
+		</div>
+
+	</div>
+
+</body>
+</html>

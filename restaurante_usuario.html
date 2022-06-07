@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="restaurante_usuario.js"></script>
+</head>
+<body id="color3">
+	<div id="barra_izquierda">
+		<h1>Eating</h1>
+		<div id="tabs">
+			<h2 style="background-color: #FDFBF9;" onclick="toInicio()">Inicio</h2>
+			<h2 onclick="toHistorial()">Historial</h2>
+			<h2>Perfil</h2>
+			<h2>Ajustes</h2>
+		</div>
+		<h3 onclick="cerrarSesion()">Cerrar Sesión</h3>
+	</div>
+	<div id="barra_derecha">
+		<h1>Tu pedido</h1>
+		<img src="basket.png">
+			<div id="pedidos">
+				<!-- '<div class="pedido">
+					<h1>'+platillos_carrito[i]+'</h1>
+					<h2>1</h2>
+					<h3>$'+precios_carrito[i]+'</h3>
+					<h4 id="'+i+'" onclick="eliminarDelCarrito(this.id)">Eliminar</h4>
+				</div>' -->
+				
+			</div>
+			<div id="total_pedido">
+				<hr>
+				<h1>Total</h1>
+				<h2 id="total"></h2>
+				<h3>Enviar a:</h3>
+				<h6 id="enviar_a"></h6>
+				<button onclick="hacerPedido()">¡Ordenar!</button>
+			</div>
+
+	</div>
+	<div id="space">
+		<div id="banner"></div>
+		<img src="like no.png" id="like">
+		<h1 id="big_title"></h1>
+		<h2 id="domicilio"></h2>
+		<div id="rate">
+			<img src="star.png">
+			<h3>4.2</h3>
+		</div>
+		<h4 id="titulo_alimentos">Alimentos</h4>
+		<div id="alimentos">
+			<!-- <div id="a'+i+'" class="platillo" onclick="agregarAlCarrito(this.id)">
+				<div class="capa1">
+					<h2>+</h2>
+					<h3>'+alimentos_precios[i]+'</h3>
+				</div>
+				<div class="capa2">
+					<img src="alimentos.jpg">
+					<h1>'+alimentos[i]+'</h1>
+				</div>
+			</div> -->	
+		</div>
+		<h4 id="titulo_bebidas">Bebidas</h4>
+		<div id="bebidas">
+			<!-- <div id="b'+i+'" class="platillo" onclick="agregarAlCarrito(this.id)">
+				<div class="capa1">
+					<h2>+</h2>
+					<h3>'+bebidas_precios[i]+'</h3>
+				</div>
+				<div class="capa2">
+					<img src="bebidas.jpg">
+					<h1>'+bebidas[i]+'</h1>
+				</div>
+			</div> -->	
+		</div>
+
+
+	</div>
+	
+
+</body>
+</html>

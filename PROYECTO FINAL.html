@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="PROYECTO_FINAL.js"></script>
+</head>
+<body><div id="color">
+
+	<header id="header_inicio">
+		<h6 class="header_titles" style="color:#FEB618">Eating</h6>
+		<h6 class="header_titles">Acerca</h6>
+		<a href="iniciar_sesion.html"><button>Iniciar Sesión</button></a>
+	</header>
+	<div id="white">
+		<h1>Come a gusto, come bien</h1>
+		<p><b>Eating</b> te conecta con millones de restaurantes de tu ciudad. Solo entra, realiza tu pedido ¡Y espera a disfrutarlo!</p>
+		<a href="#pantalla_registrarse"><button>¡Crea una cuenta!</button></a>
+	</div>
+	<div id="slideshow">
+		<img src="platillo 1.png" class="slides animacion" id="platillo1"> 
+		<img src="platillo 2.png" class="slides animacion" id="platillo2"> 
+		<img src="platillo 3.png" class="slides animacion" id="platillo3">
+	</div>
+	<script> 
+		var myIndex = 0;
+		animacion();
+
+	  	function animacion() {
+  		var i;
+  		var x = document.getElementsByClassName("slides");
+  		for (i = 0; i < x.length; i++) {
+    		x[i].style.display = "none";  
+  		}
+  		myIndex++;
+  		if (myIndex > x.length) {myIndex = 1}    
+  		x[myIndex - 1].style.display = "block";  
+  		setTimeout(animacion, 4000); 	   
+			}		// ----------------------------------slideshow-----------------------------
+	</script>
+
+<div id="pantalla_registrarse">
+	<div id="triangulo"></div>
+	<img src="usuario y restaurante.jpg">
+
+	<h5>Registrate como:</h5>
+
+	<h2 id="titulo_usuario">Usuario</h2>
+	<div id="formulario_usuario">
+		<h3>Usuario</h3>
+		<input type="text" id="new_usuario">
+		<h3>Correo</h3>
+		<input type="text" id="correo">
+		<h3>Contraseña</h3>
+		<input type="password" id="new_contraseña">
+		<h3>Confirmar Contraseña</h3>
+		<input type="password" id="confirmar_contraseña">
+		<h3>Dirección</h3>
+		<input type="text" id="direccion">
+		<button id="boton_registrarse_usuario" onclick="registrarUsuario()">Registrarse</button>
+	</div>
+
+	<h2 id="titulo_restaurante">Restaurante</h2>
+	<div id="formulario_restaurante">
+		<h3>Nombre del Restaurante</h3>
+		<input type="text" id="new_restaurante">
+		<h3>Contraseña</h3>
+		<input type="password" id="new_contraseña_res">
+		<h3>Confirmar Contraseña</h3>
+		<input type="password" id="confirmar_contraseña_res">
+		<h3>Dirección</h3>
+		<input type="text" id="direccion_res">
+		<h3>Categoría</h3>
+		<select id="select">
+			<option value="general">General</option>
+			<option value="pizza">Pizza</option>
+			<option value="ensaladas">Ensaladas</option>
+			<option value="pollo">Pollo</option>
+			<option value="sushi">Sushi</option>
+			<option value="china">China</option>
+			<option value="postre">Postre</option>
+			<option value="tacos">Tacos</option>
+		</select>
+		<button id="boton_registrarse_restaurante" onclick="registrarRestaurante()">Registrarse</button>
+	</div>
+
+</div>
+
+</div></body>
+</html>

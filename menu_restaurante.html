@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PROYECTO FINAL.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet"> 
+	<script src="menu_restaurante.js"></script>
+</head>
+<body id="color3">
+	<div id="barra_izquierda">
+		<h1>Eating</h1>
+		<div id="tabs" style="top: 27%">
+			<h2 onclick="toInicio()">Inicio</h2>
+			<h2 style="background-color: #FDFBF9;">Menú</h2>
+			<h2>Historial</h2>
+			<h2>Perfil</h2>
+			<h2>Ajustes</h2>
+		</div>
+		<h3 onclick="cerrarSesion()">Cerrar Sesión</h3>
+	</div>
+	<button id="boton_crear_platillo" onclick="mostrarFormularioDePlatillo()">Crear Platillo</button>
+	<div id="barra_derecha" class="hidden">
+		<div id="formulario_crear_platillo">
+			<h1>Nombre</h1>
+			<input type="text" id="new_platillo">
+			<h1>Precio</h1>
+			<input type="text" id="new_precio">
+			<h1>Categoría</h1>
+			<select id="select">
+				<option>Alimento</option>
+				<option>Bebida</option>
+			</select>
+			<button style="background-color:#00AE43 " onclick="crearPlatillo()">Crear</button>
+			<button style="background-color:#F87302  " onclick="cancelarFormularioDePlatillo()">Cancelar</button>
+		</div>
+	</div>
+
+	</div>
+	<div id="space">
+		<h1 style="margin-top: 10px;">Menú</h1>
+		<div id="titulo_alimentos_menu">Alimentos</div>
+		<div id="menu_alimentos">
+			<!-- <div class="platillo_menu">
+				<h1>Dragon roll</h1>
+				<h2>$70</h2>
+				<h3 onclick="eliminarPlatillo()">Eliminar</h3>
+			</div> -->
+			
+		</div>
+		<div id="titulo_bebidas_menu">Bebidas</div>
+		<div id="menu_bebidas">
+			<!-- <div class="platillo_menu">
+				<h1>Sprite</h1>
+				<h2>$25</h2>
+				<h3 onclick="eliminarPlatillo()>Eliminar</h3>
+			</div> -->
+			
+		</div>
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,1220 @@
+/* 
+Fuentes
+Rockwell --> font-family: 'Arvo', serif; 
+Segoe UI --> font-family: 'Roboto', sans-serif; 	
+
+Colores
+Amarillo: #FEB618
+Amarillo Oscuro: #D89F22;
+Verde:	#00AE43 
+Naranja: #F87302 
+Blanco Tono1: #FDFBF9 
+Blanco Tono2: #F2F0EE
+Blanco Tono3: #DAD8D6
+   */
+
+*{
+	margin:0px;
+	padding:0px;
+	scroll-behavior: smooth;	
+}
+	#color{ 
+		background-color: #FEB618; 
+		position:absolute;
+		width: 100%;
+		height: 1580px;
+		z-index: -3;
+		overflow-y: scroll;
+	}
+	#header_inicio {
+		position: absolute;
+		width: 100%;
+		height: 150px;
+		box-sizing: border-box;
+		padding: 30px;
+		padding-left: 100px;
+		background: none;
+	}
+		.header_titles {
+			font-family: 'Arvo', serif;
+			font-weight: 400;
+			float: left;
+			font-size: 20px;
+			margin-right: 100px;
+			background: none;
+		}
+		#header_inicio > a > button{
+			position: absolute;
+			right: 30px;
+			border-radius: 40px;
+			color: #FEB618;
+			background-color: #FDFBF9 ;
+			width: 230px;
+			height: 44px;
+			font-size: 20px;
+			border:none;
+			font-family: 'Arvo', serif;
+			transition-duration: 0.4s;
+			z-index: 1;
+		}
+		#header_inicio > a > button:hover {
+			background-color: #D89F22;
+			color:#FDFBF9 ;
+			cursor: pointer;
+		}
+
+	#white {
+	width: 900px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	background-color: #FDFBF9;
+	z-index: -2;
+	}
+	#white > h1	{
+		position: absolute;
+		left: 100px;
+		top: 122px;
+		width: calc(100% - 30px);
+		font-family: 'Arvo', serif; 
+		font-weight: 700;
+		font-size: 110px;
+		background:none;
+	}
+	#white > p {
+		position: absolute;
+		left: 100px;
+		top: 450px;
+		width: calc(100% - 250px);
+		font-weight: 400;
+		font-size: 20px;
+		background:none;
+		font-family: 'Arvo', serif;
+	} #white > p > b {background:none;}
+
+	#white > a > button {
+		position: absolute;
+		left: 100px;
+		top: 550px;
+		border-radius: 40px;
+		width: 300px;
+		height: 54px;
+		background-color:#FEB618 ;
+		color: #FDFBF9;
+		font-size: 25px;
+		border:none;
+		font-family: 'Arvo', serif;	
+		transition-duration: 0.4s;
+	}
+	#white > a > button:hover {
+		background-color:#F2F0EE;
+		color:#FEB618;
+		cursor: pointer;
+	}
+
+
+
+	#slideshow{
+	position: absolute;
+	width: 60%;
+	height: 789px;
+	right: 0px;
+	background:none;
+	overflow: hidden;
+	}
+	.slides{
+		position: absolute;
+		z-index: -3;
+		display: none;
+		}
+		#platillo1{
+			top: 90px;
+			width: 650px;
+			height: 650px;
+			right: 250px;
+			animation: derecha 4s;
+		}
+		@keyframes derecha {
+			0% { right:-300px; opacity:0}
+			20% {right:250px; opacity:1}
+			80% {right:250px; opacity:1}
+			100% {right:800px; opacity:1}
+		}
+		#platillo2{
+			top: 90px;
+			right: 40px;
+			width: 900px;
+			height: 650px;
+			animation: derechaa 4s;
+		}
+		@keyframes derechaa {
+			0% { right:-300px; opacity:0}
+			20% {right:40px; opacity:1}
+			80% {right:40px; opacity:1}
+			100% {right:600px; opacity:1}
+		}
+			#platillo3{
+			top: 80px;
+			right: 120px;
+			width: 700px;
+			height: 700px;
+			transform: rotate(200deg);
+			animation: derechaaa 4s;
+		}
+		@keyframes derechaaa {
+			0% { right:-300px; opacity:0}
+			20% {right:120px; opacity:1}
+			80% {right:120px; opacity:1}
+			100% {right:800px; opacity:1}
+		}
+	#pantalla_registrarse{
+	position: absolute;
+	width: 100%;
+	top: 789.6px;
+	height: 789.6px;
+	overflow: hidden;
+	}
+	
+	#triangulo {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+	border-bottom: 1000px solid #FEB618;
+	right: 22.4%;
+	transform: rotate(4deg);
+	}
+	#pantalla_registrarse > img {
+		position: absolute;
+		width: 414px;
+		height: 620px;
+		left: calc(50% - 200px);
+		top: 80px;
+	}
+	#pantalla_registrarse > h5 {
+		font-family: 'Arvo', serif;
+		font-weight: 400;
+		font-size: 35px;
+		position: absolute;
+		left: calc(50% - 120px);
+		top: 17px;
+	}
+
+	#titulo_usuario {
+	font-family: 'Arvo', serif;
+	font-weight: 700;
+	font-size: 50px;
+	position: absolute;
+	top: 80px;
+	left: 50px;
+	}
+	#formulario_usuario {
+		position: absolute;
+		left: 50px;
+		top: 160px;
+		width: 400px;
+	}
+		#formulario_usuario > h3{
+			font-family: 'Arvo', serif;
+			font-size: 25px;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
+		#formulario_usuario > input {
+			width: 90%;
+			height: 40px;
+			background-color: none;
+			border: 3px solid #FEB618 ;
+			border-radius: 40px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 18px;
+		}
+		#boton_registrarse_usuario{
+			margin-top: 30px;
+			left: 50px;
+			bottom: 20px;
+			border-radius: 40px;
+			width: 250px;
+			height: 44px;
+			background-color:#FEB618 ;
+			color: #FDFBF9;
+			font-size: 25px;
+			border:none;
+			font-family: 'Arvo', serif;
+			transition-duration: 0.4s;
+		}
+		#boton_registrarse_usuario:hover {
+		background-color:#F2F0EE;
+		color:#FEB618;
+		cursor: pointer;		}
+
+	#titulo_restaurante {
+	font-family: 'Arvo', serif;
+	font-weight: 700;
+	font-size: 50px;
+	position: absolute;
+	top: 80px;
+	right: 50px;
+	}
+	#formulario_restaurante {
+		position: absolute;
+		right: 50px;
+		top: 160px;
+		width: 400px;
+	}
+		#formulario_restaurante > h3{
+			font-family: 'Arvo', serif;
+			font-size: 25px;
+			font-weight: 400;
+			margin-bottom: 10px;
+			text-align: right;
+		}
+		#formulario_restaurante > input {
+			width: 90%;
+			height: 40px;
+			background-color: #FDFBF9;
+			border: 3px solid #FDFBF9 ;
+			border-radius: 40px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 18px;
+			text-align: right;
+			float: right;
+		}
+		#formulario_restaurante > select{
+			width: 40%;
+			height: 40px;
+			background-color: #FDFBF9;
+			border: 3px solid #FDFBF9 ;
+			border-radius: 40px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 18px;
+			text-align: right;
+			float: right;
+		}
+		
+		#boton_registrarse_restaurante{
+			margin-top: 30px;
+			bottom: 20px;
+			border-radius: 40px;
+			width: 250px;
+			height: 44px;
+			background-color:#FDFBF9 ;
+			color: #FEB618;
+			font-size: 25px;
+			border:none;
+			font-family: 'Arvo', serif;
+			float: right;
+			transition-duration: 0.4s;
+		}
+		#boton_registrarse_restaurante:hover{
+			background-color: #D89F22;
+			color:#FDFBF9 ;
+			cursor: pointer;
+		}
+/*-------------------------------------------------INICIO-------------------------------------------------------*/
+
+#color2 {
+	background-color: #FDFBF9 ;
+	overflow: hidden;
+}
+	#color2 > h1{
+		font-family: 'Arvo', serif;
+		font-size: 80px;
+		font-weight: 700;
+		text-align: center;
+		position: absolute;
+		top: 40%;
+	}
+	#iniciar_sesion_usuario{
+		left: 15%;
+	}
+	#iniciar_sesion_usuario:hover {cursor: pointer;}
+	#iniciar_sesion_restaurante{
+		right: 10%;
+	}
+	#iniciar_sesion_restaurante:hover {cursor: pointer;}
+	#ingresa_como{
+		position: absolute;
+		font-family: 'Arvo', serif;
+		font-size: 30px;
+		font-weight: 700;
+		left: calc(50% - 100px);
+		top: 20px;
+	}
+	.animacion_restaurante{
+		animation-name: animacion_restaurante;
+		animation-duration: 0.1s;
+	}
+	@keyframes animacion_restaurante {
+		from{}
+		to {right: -80px; transform: rotate(90deg); top: 45%; font-size: 50px;}
+	}
+	.animacion_usuario{
+		font-family: 'Arvo', serif;
+		animation-name: animacion_usuario;
+		animation-duration: 0.1s;
+
+	}
+	@keyframes animacion_usuario{
+		from {}
+		to{ left: -30px; transform: rotate(-90deg); top: 45%; font-size: 50px; }
+	}
+
+	.arriba {
+		animation-name: arriba;
+	}
+		@keyframes arriba{
+			from{}
+			to { top: 100px; }
+		}
+
+	#imagen_usuario {
+		width: 526px;
+		height: 786px;
+		position: absolute;
+		right: -530px;
+	}
+	.mostrar1{
+		animation-name: mostrar_uno;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
+		@keyframes mostrar_uno{
+			from{}
+			to{ right: 150px; }
+		}
+	#imagen_restaurante {
+		width: 540px;
+		height: 786px;
+		position: absolute;
+		left: -590px;
+	}
+	.mostrar2{
+		animation-name: mostrar_dos;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
+		@keyframes mostrar_dos{
+			from{}
+			to{ left: 150px; }
+		}
+
+	#formulario_iniciar_sesion_usuario{
+		position: absolute;
+		width: 450px;
+		height: 370px;
+		top: 35%;
+		left: -31%;
+	}
+	.mostrar_form_uno{
+		animation-name: mostrar_form_uno;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
+		@keyframes mostrar_form_uno{
+			from {}
+			to{left: 11%;}
+		}
+	#formulario_iniciar_sesion_restaurante {
+		position: absolute;
+		width: 450px;
+		height: 370px;
+		top: 35%;
+		right: -31%;
+	}
+	.mostrar_form_dos{
+		animation-name: mostrar_form_dos;
+		animation-duration: 0.6s;
+		animation-fill-mode: forwards;
+	}
+		@keyframes mostrar_form_dos{
+			from {}
+			to{right:11%;}
+		}
+		.formulario > h4 {
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 25px;
+		}
+		.formulario > input {
+			width: 100%;
+			height: 40px;
+			background-color: none;
+			border: 3px solid #FEB618 ;
+			border-radius: 40px;
+			box-sizing: border-box;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 23px;
+			text-align: center;
+		}
+		
+		.formulario > h6{
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 14px;
+			text-align: center;
+			font-style: italic;
+			text-decoration: underline;
+			margin-top: 5px;
+		}
+		.formulario > button {
+			font-family: 'Arvo', serif; 
+			text-align: center;
+			width: 50%;
+			height: 40px;
+			position: absolute;
+			left: calc(50% - 115px);
+			background-color: #FEB618;
+			border-radius: 40px;
+			border: none;
+			color: #FDFBF9 ;
+			font-weight: 400;
+			font-size: 25px;
+			bottom: 0px;
+			transition-duration: 0.3s;
+		}
+		.formulario > button:hover{ background-color:#F2F0EE; color:#FEB618; cursor: pointer; }
+/*----------------------------------------------INICIO DE SESIÓN------------------------------------------------*/
+#color3 {
+	background-color: #FDFBF9 ;
+}
+	#barra_izquierda {
+		position: fixed;
+		height: 100%;
+		width: 280px;
+		background-color: #F2F0EE;
+	}
+	#tabs {
+		position: absolute;
+		top: 31%;
+		width: 280px;
+	}
+	#barra_izquierda > h1 {
+		position: absolute;
+		font-family: 'Arvo', serif; 
+		font-size: 47px;
+		font-weight: 700;
+		width: 280px;
+		text-align: center;
+		top: 10px;
+	}
+		#tabs > h2{
+			font-family: 'Roboto', sans-serif; 	 
+			font-size: 25px;
+			font-weight: 400;
+			text-align: center;
+			color: rgba(0,0,0,0.48);
+			height: 70px;
+			line-height: 3;
+		}
+			#tabs > h2:hover {
+				background-color: #FDFBF9;
+				cursor: pointer;
+			}
+
+		#barra_izquierda > h3 {
+			font-family: 'Roboto', sans-serif; 	 
+			font-size: 25px;
+			font-weight: 400;
+			text-align: center;
+			color: rgba(0,0,0,0.48);
+			margin-bottom: 20px;
+			width: 280px;
+			height: 70px;
+			line-height: 3;
+			position: absolute;
+			bottom: 10px;
+		}
+		#barra_izquierda > h3:hover{
+			background-color: #FDFBF9;
+			cursor: pointer;
+		}
+
+	#barra_derecha {
+		position: fixed;
+		height: 100%;
+		width: 350px;
+		background-color: #F2F0EE;
+		right: 0%;
+	}
+		#barra_derecha > h1 {
+			position: absolute;
+			font-family: 'Arvo', serif; 
+			font-size: 35px;
+			font-weight: 700;
+			width: 280px;
+			left: 20px;
+			top: 20px;
+		}
+		#barra_derecha > img {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 15px;
+			right: 30px;
+		}
+		#barra_derecha > h2 {
+			position: absolute;
+			font-size: 80px;
+			top: 40%;
+			left: calc(50% - 40px);
+			font-weight: 400;
+			font-family: 'Arvo', serif; 
+			color: rgba(0,0,0,0.48);
+		}
+		#barra_derecha > h3 {
+			position: absolute;
+			font-size: 17px;
+			top: 55%;
+			left: calc(50% - 100px);
+			width: 200px;
+			font-weight: 400;
+			font-family: 'Roboto', sans-serif; 	 
+			text-align: center; 
+			color: rgba(0,0,0,0.48);
+		}
+
+	#space {
+		position: absolute;
+		left: 310px;
+		width: 806px;
+		height: 100%;
+		top: 20px;
+	}
+
+	#space > h5 {
+		font-family: 'Arvo', serif; 
+		font-size: 20px;
+		font-weight: 400;
+	}
+	#space > h6 {
+		font-family: 'Arvo', serif; 
+		font-size: 40px;
+		margin-top: 5px;
+		font-weight: 700;
+	}
+
+	#buscar {
+		position: absolute;
+		width: 300px;
+		height: 30px;
+		border: 1px solid black;
+		border-radius: 40px;
+		box-sizing: border-box;
+		padding-left: 40px;
+		right: 0%;
+		top: 0%;
+		font-family: 'Arvo', serif; 
+	}
+	#lupa {
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		right: 270px;
+		top: 3px;
+	}
+	#limon {
+		width: 806px;
+		height: 216px;
+		border-radius: 40px;
+		margin-top: 20px;
+		position: relative;
+		background-image: url("Limon Naranja.jpg");
+		background-size: cover;
+	}
+	#titulo_limon {
+		position: absolute;
+		font-family: 'Arvo', serif; 
+		font-size: 40px;
+		font-weight: 700;
+		top: 29%;
+		left: 7%;
+		color: white;
+		width: 280px;
+	}
+
+	h4 {
+		font-family: 'Arvo', serif; 
+		font-weight: 400;
+		font-size: 25px;
+		margin-top: 20px;
+	}
+	#favoritos{
+		margin-top: 10px;
+		top: 400px;
+		right: 0px;
+		float: left;
+		margin-bottom: 10px;
+	}
+	#restaurantes{
+		margin-top: 10px;
+		top: 400px;
+		right: 0px;
+		float: left;
+		margin-bottom: 10px;
+	}
+		.restaurante {
+			/*background-image: linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.4) ), url(hamburguesas.jpg) ;*/
+			width: 220px;
+			height: 100px;
+			border-radius: 40px;
+			background-size: cover;
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 25px;
+			text-align: center;
+			color: white;
+			line-height: 4;
+			float: left;
+			margin:10px;
+			margin-left: 38px;
+		}
+		.restaurante {cursor: pointer;}
+/*----------------------------------------------INICIO USUARIO------------------------------------------------*/
+#banner {
+	width: 806px;
+	height: 280px;
+	border-radius: 40px;
+	/*background-image: linear-gradient( rgba(0,0,0,0.2) , rgba(0,0,0,0.2) ), url('Sushi Banner.jpg') ;*/
+	background-size: cover;
+}
+	#like {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		right: -40px;
+		top: 10px;
+	}
+	#space > h1{
+		font-family: 'Arvo', serif; 
+		font-weight: 700;
+		font-size: 50px;
+		float: left;
+	}
+	#space > h2{
+		font-family: 'Roboto', sans-serif; 	
+		font-weight: 400;
+		font-style: italic;
+		font-size: 15px;
+		position: absolute;
+		right: 0px;
+		margin-top: 20px;
+	}
+	#rate {
+		height: 50px;
+		position: relative;
+		margin-top: 40px;
+	}
+	#rate > img {
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 43%;
+		left: 0px;
+	}
+	#rate > h3{
+		font-family: 'Arvo', serif; 
+		font-weight: 400;
+		position: absolute;
+		top: 43.3%;
+		left: 30px;
+		font-style: italic;
+	}
+	#titulo_alimentos{
+		font-family: 'Arvo', serif; 
+		font-weight: 400;
+	}
+		#alimentos {
+			width: 100%;
+			margin-left: 30px;
+			float: left;
+		}
+	#titulo_bebidas {
+		font-family: 'Arvo', serif; 
+		font-weight: 400;
+	}
+		#bebidas {
+			width: 100%;
+			margin-left: 30px;
+			float: left;
+		}
+
+	.platillo{
+		width: 100px;
+		height: 130px;
+		float: left;
+		margin: 5px;
+		margin-bottom: 25px;
+		transition-duration: 0.3s;
+	}
+	.capa1 > h2{
+		font-size: 100px;
+		position: absolute;
+		margin-top: -10px;
+		margin-left: 18px;
+		font-family: 'Arvo', serif; 
+		font-weight: 400;
+		z-index: -5;
+	}
+	.capa1 > h3 {
+		font-size: 18px;
+		position: absolute;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		z-index: -5;
+		background-color: #FDFBF9;
+		text-align: center;
+		margin-top: 103px;
+		margin-left: 29px;
+
+	}
+	.capa2 > img {
+		width: 100px;
+		height: 100px;
+		border-radius: 30px;
+		transition-duration: 0.3s;
+		z-index: 5;
+	}
+	.capa2 > h1 {
+		font-family: 'Roboto', sans-serif; 	
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+		background-color: #FDFBF9 ;
+		color: rgba(0,0,0,0.5);
+	}
+	.capa2{transition-duration: 0.3s;}
+	.capa2:hover {opacity: 0.1;}
+	
+		
+
+	#pedidos { /* Seccion de los pedidos*/
+		position: absolute;
+		top: 13%;
+		width: 100%;
+		height: 60%;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	.pedido {
+		position: relative;
+		width: 100%;
+		height: 70px;
+		background-color: #DAD8D6;
+		margin-top: 1px;
+	}
+
+		.pedido > h1 {
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 23px;
+			position: absolute;
+			width: 80%;
+			height: 50%;
+			top: 15px;
+			left: 5px;
+
+		}
+		.pedido > h2 {
+			position: absolute;
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 23px;
+			right: 10px;
+			top: 5px;
+		}
+		.pedido > h3 {
+			position: absolute;
+			bottom: 5px;
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 23px;
+			right: 10px;
+			
+		}
+		.pedido > h4 {
+			position: absolute;
+			bottom: 5px;
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 15px;
+			left: 10px;
+			font-style: italic;
+			text-decoration: underline;
+		}
+	#total_pedido {
+		position: absolute;	
+		height: 25%;
+		width: 100%;
+		bottom: 0px;
+	}
+		#total_pedido > hr {
+			width: 85%;
+			color: #DAD8D6;
+			margin-left: 7%;
+		}
+		#total_pedido > h1 {
+			font-family: 'Arvo', serif; 
+			font-weight: 700;
+			font-size: 30px;
+			margin-left: 7%;
+		}
+		#total_pedido > h2 {
+			position: absolute;
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 27px;
+			right: 8%;
+			top: 8px;
+		}
+		#total_pedido > h3 {
+			font-family: 'Roboto', sans-serif; 	
+			font-weight: 400;
+			font-size: 15px;
+			text-align: center;
+			margin-top: 7px;
+		}
+		#total_pedido > h6 {
+			font-family: 'Roboto', sans-serif; 	
+			font-weight: 400;
+			font-size: 15px;
+			text-align: center;
+			font-style: italic;
+			margin-top: 7px;
+		}
+		#total_pedido > button {
+			background-color: #00AE43 ;
+			width: 80%;
+			text-align: center;
+			font-weight: 700;
+			border-radius: 40px;
+			border: none;
+			color: white;
+			height: 45px;
+			font-size: 25px;
+			position: absolute;
+			bottom: 40px;
+			right: 10%;
+			font-family: 'Arvo', serif; 
+		}
+/*----------------------------------------------RESTAURANTE USUARIO------------------------------------------------*/
+#titulo_historial {
+	position: absolute;
+	top: -10px;
+	margin-left: 50px;
+}
+	#historial_usuario{
+		position: absolute;
+		width: 90%;
+		height: 70%;
+		top: 10%;
+		left: 50px;
+	}
+	.pedido_historial{
+		width: 100%;
+		height: 90px;
+		border-radius: 40px;
+		background-color: red;
+		position: relative;
+		margin-bottom: 5px;
+	}
+	.pedido_historial > h1 {
+		position: absolute;
+		font-family: 'Arvo', serif; 
+		font-size: 40px;
+		font-weight: 400;
+		color: white;
+		left: 40px;
+		top: 20px;
+	}
+	.pedido_historial > h2 {
+		position: absolute;
+		font-family: 'Roboto', sans-serif;
+		font-style: italic;
+		font-size: 20px;
+		right: 40px;
+		top: 20px;
+		color: white;
+		font-weight: 400;
+	}
+	.pedido_historial > h3 {
+		position: absolute;
+		font-family: 'Roboto', sans-serif;
+		font-style: italic;
+		font-size: 20px;
+		right: 40px;
+		top: 50px;
+		color: white;
+		font-weight: 400;
+	}
+	#leyenda {
+		position: absolute;
+		bottom: 40px;
+		left: 80px;
+		width: 100%;
+		height: 50px;
+	}
+	#leyenda > h6{
+		position: relative;
+		float: left;
+		margin-right: 80px;
+		font-family: 'Arvo', serif; 
+		font-size: 30px;
+		font-weight: 700;
+	}
+	#circulos{
+		position: absolute;
+		width: 120%;
+		height: 50px;
+		left: -35px;
+		bottom: -5px;
+	}
+	#circulos > div {
+		width: 30px;
+		height: 30px;
+		border-radius: 40px;
+		float: left;
+		margin-right: 220px;
+	}
+/*----------------------------------------------HISTORIAL USUARIO------------------------------------------------*/
+#titulo_nuevos_pedidos {
+	position: absolute;
+	top: 20%;
+	left: 0%;
+}
+	#titulo_nuevos_pedidos > h2 {
+		font-family: 'Arvo', serif;
+		font-weight: 400;
+		font-size: 30px;
+	}
+
+	#nuevos_pedidos {
+		position: relative;
+		background-color:#00AE43;
+		width: 70%;
+		height: 35%;
+		border-radius: 40px; 
+		margin-top: 200px;
+	}
+	#nuevos_pedidos > h1 {
+		font-family: 'Arvo', serif;
+		font-weight: 700;
+		font-size: 30px;
+		color: white;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+	}
+	#nuevos_pedidos > h2 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: white;
+		font-style: italic;
+		font-weight: 400;
+		position: absolute;
+		top: 15px;
+		left: 30px;
+	}
+	#nuevos_pedidos > h3 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: white;
+		font-style: italic;
+		font-weight: 400;
+		position: absolute;
+		top: 15px;
+		right: 30px;
+	}
+	#nuevos_pedidos > h4 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		color: white;
+		font-style: italic;
+		font-weight: 400;
+		position: absolute;
+		top: 20px;
+		right: 30px;
+	}
+	#nuevos_pedidos > hr {
+		background-color: white;
+		width: 90%;
+		left: 5%;
+		top: 25%;
+		position: absolute;
+		height: 3px;
+		border: none;
+	}
+
+	#table {
+		position: absolute;
+		top: 30%;
+		left: 15%;
+	}
+	#table > table {
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: 400;
+		color: white;
+		width: 300px;
+		text-align:center;
+
+	}
+		#table > table > tr > td {
+			height: 50px;
+		}
+
+	#botones {
+		position:absolute; 
+		width: 80%;
+		left: 10%;
+		bottom: 10px;
+	}
+		#botones > button {
+			width: 200px;
+			height: 35px;
+			color: white;
+			font-family: 'Arvo', serif;
+			font-weight: 400;
+			font-size: 20px;
+			border-radius: 40px;
+			border:none;
+		}
+	
+/*----------------------------------------------INICIO RESTAURANTE------------------------------------------------*/
+#titulo_alimentos_menu {
+	font-family: 'Arvo', serif;
+	font-size: 30px;
+	top: 10%;
+	margin-top: 100px;
+}
+	
+	#menu_alimentos {
+		width: 80%;
+		margin-top: 20px;
+	}
+		.platillo_menu {
+			width: 100%;
+			height: 60px;
+			background-color: #DAD8D6;
+			position: relative;
+		}
+		.platillo_menu > h1 {
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 23px;
+			position: absolute;
+			left: 10px;
+			top: 5px;
+		}
+		.platillo_menu > h2 {
+			font-family: 'Arvo', serif; 
+			font-weight: 400;
+			font-size: 20px;
+			position: absolute;
+			right: 10px;
+			top: 15px;
+		}
+		.platillo_menu > h3 {
+			font-family: 'Roboto', sans-serif; 
+			font-weight: 400;
+			font-size: 13px;
+			position: absolute;
+			left: 13px;
+			bottom: 5px;
+			font-style: italic;
+			text-decoration: underline;
+		}
+	#titulo_bebidas_menu {
+		font-family: 'Arvo', serif;
+		font-size: 30px;
+		top: 10%;
+		margin-top: 50px;
+	}
+	#menu_bebidas {
+		width: 80%;
+		margin-top: 20px;
+	}
+
+	#boton_crear_platillo{
+		position: fixed;
+		background-color:#FEB618;
+			width: 280px;
+			text-align: center;
+			font-weight: 700;
+			border-radius: 40px;
+			border: none;
+			color: white;
+			height: 45px;
+			font-size: 25px;
+			top: 20px;
+			right: 30px;
+			font-family: 'Arvo', serif;  
+	}
+	#formulario_crear_platillo{
+		position: absolute;
+		width: 100%;
+		height: 60%;
+		top: 20%;
+		font-family: 'Arvo', serif;
+
+	}
+	#formulario_crear_platillo > h1{
+	font-weight: 400;
+	text-align: center;
+	}
+	#formulario_crear_platillo > input{
+	font-weight: 400;
+	text-align: center;
+	width: 250px;
+	height: 30px;
+	border-radius: 40px;
+	border: 2px solid black;
+	background-color: #F2F0EE;
+	margin-left: 50px;
+	font-family: 'Arvo', serif;
+	font-size: 18px;
+	margin-bottom: 30px;
+	}
+	#formulario_crear_platillo > select{
+		border: 2px solid black;
+		font-weight: 400;
+		text-align: center;
+		width: 250px;
+		height: 35px;
+		border-radius: 40px;
+		background-color: #F2F0EE;
+		margin-left: 50px;
+		font-family: 'Arvo', serif;
+		font-size: 18px;
+		margin-bottom: 110px;
+	}
+	#formulario_crear_platillo > button {
+		font-weight: 400;
+		text-align: center;
+		width: 250px;
+		height: 33px;
+		border-radius: 40px;
+		border:none;
+		background-color: #F2F0EE;
+		margin-left: 50px;
+		font-family: 'Arvo', serif;
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: white;
+	}
+.hidden {
+	display: none;
+}
